@@ -16,6 +16,24 @@
 [conda]: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 [mamba]: https://github.com/mamba-org/mamba#installation
 
+## SLURM
+
+The NASA Center for Climate Simulation (NCCS) uses SLURM as its queue submission system.
+
+- [NCCS-specific SLURM documentation](https://www.nccs.nasa.gov/nccs-users/instructional/using-slurm)
+- [Official SLURM documentation](https://slurm.schedmd.com/documentation.html) (much more dense and thorough)
+
+TODO: NCCS-specific gotchas.
+
+## Working in a command line environment
+
+- Learn a terminal-based editor. I highly recommend vim / [Neovim](https://neovim.io/) -- it has a learning curve, but once you get the hang of it, it's extremely powerful. With some configuration, you can turn (Neo)vim into a fairly sophisticated IDE. Also, basic vim is available on almost any command line system.
+  - Run `vimtutor` (or `:Tutor` command after starting vim/Neovim) to learn the basics of vim.
+  - Both Vim and Neovim are highly extensible. Here is [my current Neovim configuration][my-nvim]. Alternatively, [kickstart.nvim][kickstart-nvim] is a good starting point for a new Neovim configuration with many advanced features enabled.
+
+[my-nvim]: https://github.com/ashiklom/nvim-lua
+[kickstart-nvim]: https://github.com/nvim-lua/kickstart.nvim
+
 ## Python
 
 ### Visualization and UI
