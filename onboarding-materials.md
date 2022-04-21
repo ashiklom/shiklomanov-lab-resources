@@ -31,8 +31,11 @@ TODO: NCCS-specific gotchas.
   - Run `vimtutor` (or `:Tutor` command after starting vim/Neovim) to learn the basics of vim.
   - Both Vim and Neovim are highly extensible. Here is [my current Neovim configuration][my-nvim]. Alternatively, [kickstart.nvim][kickstart-nvim] is a good starting point for a new Neovim configuration with many advanced features enabled.
 
+- Learn the basics of [readline interaction][readline] -- basically, keyboard shortcuts for editing commands. Not essential, but can be a significant quality of life improvement.
+
 [my-nvim]: https://github.com/ashiklom/nvim-lua
 [kickstart-nvim]: https://github.com/nvim-lua/kickstart.nvim
+[readline]: https://www.gnu.org/software/bash/manual/html_node/Readline-Interaction.html
 
 ## Python
 
