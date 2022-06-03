@@ -42,6 +42,13 @@ mod_python                    # If you are using Python
 - Check the status of your currently submitted jobs: `squeue -u <username>`
   - To monitor this continuously: `watch squeue -u <username>`. Exit this with Control-C.
 - Connect to a currently running job (e.g., to run `htop`): `srun --pty --jobid <jobid> bash`
+- To chain jobs together, use the `--dependency=afterok:<jobid>` argument. For example:
+
+    sbatch jobA.sh
+    # Submitted batch job 58624704
+    sbatch --dependency=afterok:58624704 jobB.sh
+
+  This will start `jobB.sh` only after `jobA.sh` has successfully completed.
 
 ## Other NCCS DISCOVER tips
 
