@@ -32,3 +32,20 @@
 [conda-tutorial]: https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
 [conda]: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 [mamba]: https://github.com/mamba-org/mamba#installation
+
+## Downloading data from NASA
+
+NASA data usually require an extra level of authentication via EarthData Login to actually download data.
+If you already have an authorization API token, you can use code like the following:
+
+```python
+import urllib.request
+opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor())
+request = urllib.request.Request(url)
+token = "<your token here...>"  # E.g., "dHJpbmtld..."
+request.add_header("Authorization", f"Bearer {token}")
+with opener.open(request) as response, open("/path/to/target/file", "wb") as f:
+  f.write(response.read())
+```
+
+TODO: How to retrieve the token using a netrc file or username/password.
