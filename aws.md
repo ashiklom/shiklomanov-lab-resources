@@ -28,3 +28,5 @@ Use a command like the following (after you have authenticated with multi-factor
 ```
 aws iam update-login-profile --user-name 'myuser' --password 'mypassword'
 ```
+
+Documentation for [`update-login-profile.html`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/update-login-profile.html).
