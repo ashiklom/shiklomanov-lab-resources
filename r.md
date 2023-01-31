@@ -13,12 +13,16 @@
 ## Topical guides
 
 - [R for data science][r4ds] --- Tidyverse; ggplot
+- [Advanced R][advr] --- Great resource for really understanding the internals of the R language.
 - [Geocomputation in R][geocompr] --- Geospatial analysis and visualization
 - [Fundamentals of data visualization][dataviz] --- General visualization best practices, but all graphics are in `ggplot2`
+- [R Packages][rpkgs] --- How to create your own R packages (and relevant information about how R packages work)
 
 [r4ds]: https://r4ds.hadley.nz/
 [geocompr]: https://geocompr.robinlovelace.net/
 [dataviz]: https://clauswilke.com/dataviz/
+[advr]: https://adv-r.hadley.nz/
+[rpkgs]: https://r-pkgs.org/
 
 ## Tools
 
